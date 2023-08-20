@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+
+nav {
+    font-family: "Catamaran", sans-serif;
+    position:fixed;
+    top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    z-index: 5;
+    background-color: transparent;
+    
+
+}
+.nav{
+    position:relative;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    gap:1%;
+    width:80%;
+}
+
+.navbar li {
+    text-align: center;
+    font-size: 15px;
+}
+
+.navbar li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li:hover a{
+    color:#FF4127;
+} 
+
+.icon{
+    height:60px;
+    width:80px;
+    background-color: #FF4127;
+    color:white;
+    border:none;
+}
+.icon:hover{
+    background-color: White;
+    color:#FF4127;
+    border: solid 1px #FF4127;
+}
+
+
+
+.humburger{
+    position: absolute;
+    top:0.2rem;
+    /* margin-left: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:2.25rem;
+    height:1.5rem;
+    display:none;
+}
+.humburger span{
+    height: 0.4rem;
+    width:100%;
+    background-color: black;
+    border-radius: 0.2rem;
+    
+
+}
+
+.navbrand{
+    height:100px;
+    width:140px;
+    
+}
+.navbrand img{
+    height:100%;
+    width:100%;
+    opacity:5;
+}
+
+
+ .search-box input{
+    border-radius: 25px;
+    border: 1px solid #FF4127;
+    padding: 20px; 
+    width: 300px;
+    height:12px;
+    
+
+}
+
+.head{
+    position:relative;
+    height:700px;
+    width:100%;
+
+       
+}
+.head img{
+
+    height:100%;
+    width:100%;
+    background-color: white;
+    opacity:0.6;
+
+}
+
+.head-1{
+    position:absolute;
+    margin-left: 10%;
+   top:45%;
+   
+}
+.head-1 h2{
+    font-size:40px;
+    font-weight:700;
+}
+.head-1 h6{
+    font-size: 25px;
+}
+
+
+@media (max-width:480px)  {
+    
+
+    .humburger{
+        display:block;
+
+    }
+    nav {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        position: static;
+        /* position: absolute; */
+    }
+
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li a {
+        color: black;
+    }
+
+}
+    
+
+
+
+
+
